@@ -34,6 +34,10 @@ The goal is to ensure the Angular Calculator runs successfully when accessed via
 
 ## 🪜 Step-by-Step Implementation
 
+## CREATING VM'S##
+
+<img width="1599" height="392" alt="Image" src="https://github.com/user-attachments/assets/72a81cf4-5fb6-43c9-9917-b0085a8ac8c5" />
+
 ### **1️⃣ Setting Up VM1 (Development VM)**
 
 #### 1.1: VM1 Configuration
@@ -54,7 +58,9 @@ sudo npm install -g @angular/cli
 git clone https://github.com/Ai-TechNov/AngularCalculator.git
 cd AngularCalculator
 ```
-📸 Screenshot 1: Terminal output showing successful clone and directory structure.
+
+<img width="786" height="205" alt="Image" src="https://github.com/user-attachments/assets/9fc66b8f-46ed-4c47-9846-14e1b8ef1707" />
+
 
 1.4: Install Project Dependencies
 ```
@@ -66,7 +72,7 @@ npm install
 ```
 sudo ng build --prod
 ```
-📸 Screenshot 3: Successful build showing the creation of the dist/ folder.
+<img width="1594" height="670" alt="Image" src="https://github.com/user-attachments/assets/948d030f-9c63-46db-be8c-a023d741f11d" />
 
 2️⃣ Setting Up VM2 (Deployment VM)
 2.1: VM2 Configuration
@@ -79,8 +85,8 @@ sudo hostnamectl set-hostname vm2-prod
 ```
 sudo apt install nginx -y
 sudo systemctl status nginx
-📸 Screenshot 4: Successful Nginx installation.
-
+```
+<img width="1135" height="231" alt="Image" src="https://github.com/user-attachments/assets/cd6bc7bb-35bf-4aee-882f-d9dda106667c" />
 
 3️⃣ Transfer the Angular Application to VM2
 3.1: Transfer Build Files from VM1 to VM2
@@ -93,6 +99,8 @@ Transfer files using scp:
 ```
 scp -r * username@<vm2-ip>:/var/www/html/
 ```
+
+<img width="1599" height="292" alt="Image" src="https://github.com/user-attachments/assets/72835878-b754-4e1c-a99d-58fcbe30f7c5" />
 Replace:
 
 username → VM2 username
@@ -110,6 +118,7 @@ On VM2:
 ```
 ls /var/www/html/
 ```
+<img width="1048" height="294" alt="Image" src="https://github.com/user-attachments/assets/cad35584-5f43-4fe7-860f-8b8159ac5ca5" />
 
 4️⃣ Configure Nginx on VM2
 4.1: Edit Nginx Default Configuration
@@ -152,7 +161,7 @@ http://<vm2-ip>
 ✅ The Angular Calculator should load successfully.
 ```
 
-
+<img width="1413" height="810" alt="Image" src="https://github.com/user-attachments/assets/b20dfb50-a598-4586-9fb2-61ccf1344504" />
 ```
 ## Additional Notes##
 Ensure both VMs are on the same network (for scp and deployment).
