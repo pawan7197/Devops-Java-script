@@ -172,11 +172,15 @@ Keep your /etc/nginx/sites-available/default secure.
 
 Use sudo nginx -t to validate config changes before restarting.
 
-🧑‍💻 Author
-PawanKumar Kothapalli
-🎓  DevOps & Cloud Enthusiast
-📍 Hyderabad, India
-🌐 GitHub: https://github.com/PawanKumarKothapalli
+## Author
+
+Pawan Kumar Kothapalli
+
+Devops-Engineer
+
+Mail-Id: pawankumarkothapalli22644@gmail.com
+
+Linkedin-URL: https://www.linkedin.com/in/pawan-kumar-kothapalli-17865b302/
 
 
 
